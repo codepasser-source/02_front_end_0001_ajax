@@ -1,0 +1,37 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'index.jsp' starting page</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+ <script type="text/javascript" src="./jslib/jquery-1.4.js"></script>
+ <script type="text/javascript" src="./jslib/verifyencode.js"></script>
+  </head>
+  
+  <body>
+  <h1>ajax IE 中文问题</h1>
+  <h3>乱码问题 ：<br>方法一：在请求的参数含有中文的 参数值使用一次encodeURI()  获取时使用  new String()
+  <br>方法二：在页面端使用两次encodeURI  在服务端使用  URLDecoder.decode(username,"UTF-8");[详解：由于在发出请求时，web应用的底层解码一次，所以需要加两次encodeURI]
+  </h3> 
+  <hr>
+ <!--ajax 的 方式 不需要表单-->
+ <!--ajax 的 方式name 需要id-->
+  用户名：<input type="text" id="username" />
+         <input type="button" id="check" value="校验" onclick="verify()"/>
+         <span id="checkdata" style="color:#cccccc;"></span>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+/*id 选择器*/
+
+/*主div*/
+#win{
+  /*边框样式*/
+  border: 1px #5a5a5a solid;
+  /*窗口宽度高度固定，不要太大*/
+  width: 240px;
+  height: 172px;
+  /*控制窗口显示的位置*/
+  position: absolute;/*绝对定位*/
+  top:230px;
+  left: 400px;
+  /*希望开始时不可见*/
+  display: none; 
+}
+
+/*标题div*/
+#title{
+   /*背景颜色*/
+   background: #E0FFFF;
+   border: 1px #5a5a5a solid;
+   width: 238px;
+   height: 20px;
+   /*文字颜色*/
+   color: #CD6600;
+   /*左右内边距离*/
+   padding-left: 5px; 
+}
+
+/*内容div*/
+#content{ 
+  background: #F0F8FF;
+  width: 238px;
+  height: 140px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+#close{
+    /*利用外边距离向右移动*/
+    margin-left: 158px;
+    /*鼠标移动进入时 显示小手的形状*/
+    cursor: pointer; 
+}
+
+

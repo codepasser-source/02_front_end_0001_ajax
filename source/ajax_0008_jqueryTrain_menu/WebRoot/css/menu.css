@@ -1,0 +1,28 @@
+/**/ 
+LI{
+   /*不显示小圆点*/
+   list-style: none;	
+   /*缩进*/
+   padding-left: 20px;
+   padding-top: 3px;
+   /*隐藏菜单项*/
+   display: none; 
+   
+}
+UL {
+	/*显示小手*/ 
+	cursor: pointer;
+}
+
+#content{
+    position: absolute;/*绝对定位*/
+    top:220px;
+    left:200px;
+    height: 300px;
+    width: 600px;
+    border: 1px solid #5a5a5a;
+}
+
+a{
+text-decoration: none;
+}
